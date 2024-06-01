@@ -1,21 +1,16 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import 'styles/globals.css'
-import Layout from 'components/layout'
+import Layout from "components/layout"
 
-// Font Awesomeの設定
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
-    <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
 
-export default MyApp
+export default App
